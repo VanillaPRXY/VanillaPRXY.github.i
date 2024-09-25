@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>User Input Display</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Website</title>
 </head>
 <body>
-    <label for="userInput">Enter your text:</label>
-    <input type="text" id="userInput">
-    <button onclick="displayInput()">Display</button>
-    <div id="output"></div>
+    <h1>Enter a website URL:</h1>
+    <input type="text" id="urlInput" placeholder="https://www.example.com">
+    <button onclick="fetchWebsite()">Go</button>
+    <br>
+    <iframe id="websiteFrame" src="" frameborder="0" scrolling="auto"></iframe>
     <script src="script.js"></script>
 </body>
 </html>
